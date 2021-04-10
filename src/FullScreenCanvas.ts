@@ -5,13 +5,6 @@ class FullScreenCanvas {
         let canvas = document.createElement('canvas');
         parent.appendChild(canvas);
 
-        canvas.style.position = 'absolute';
-        canvas.style.overflow = 'hidden';
-        canvas.style.left = '0';
-        canvas.style.top = '0';
-        canvas.width = window.innerWidth;
-        canvas.height = window.innerHeight;
-
         let resizeHandler = function () {
             canvas.style.position = 'absolute';
             canvas.style.overflow = 'hidden';
