@@ -50,4 +50,4 @@ FullScreenCanvas.remove(canvas);
 
 ## License
 
-The FullScreenCanvas library is released under the MIT license.
+The FullScreenCanvas library is released under the MIT license. See LICENSE for more information.
