@@ -5,7 +5,7 @@ class FullScreenCanvas {
         resizeHandler: (ev: UIEvent) => void;
     }> = [];
 
-    public static add(parent: HTMLElement = document.body): HTMLCanvasElement {
+    public static add(parent: HTMLElement = document.body, options?: { fullScreen?: boolean }): HTMLCanvasElement {
 
         let canvas = document.createElement('canvas');
         parent.appendChild(canvas);
@@ -19,6 +19,10 @@ class FullScreenCanvas {
 
         window.addEventListener('resize', newManager.resizeHandler, false);
 
+        if (options?.fullScreen === true) {
+            canvas.requestFullscreen();
+        }
+        
         return canvas;
     }
 

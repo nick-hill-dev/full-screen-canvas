@@ -2,7 +2,7 @@
 
 The FullScreenCanvas library is a lightweight library that simplifies the process of creating and removing one or more full-screen canvas elements. Each canvas occupies the full width and height of the window area, even if the window is resized.
 
-Running `tsc -b` at the root will generate a `fullScreenCanvas.js` file in the `bin` subdirectory.
+Running `tsc -b` at the root will generate a `fullScreenCanvas.js` file in the `bin` subdirectory. Examples are in the `demos` directory.
 
 ## Adding a Full-Screen Canvas
 
@@ -17,6 +17,14 @@ or
 ```js
 let parent = document.getElementById('my-canvas-container');
 let canvas = FullScreenCanvas.add(parent);
+```
+
+It is also possible to make the canvas fill the whole screen rather than just the browser window, though it is necessary to do so as a result of a user action:
+
+```js
+window.onclick = () => {
+    FullScreenCanvas.add(document.body, { fullScreen: true });
+}
 ```
 
 ## Removing a Full-Screen Canvas

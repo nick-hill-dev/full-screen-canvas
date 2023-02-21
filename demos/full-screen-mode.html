@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Single Canvas - FullScreenCanvas Demos</title>
+    <script src="../bin/fullScreenCanvas.js"></script>
+</head>
+
+<body>
+    <style>
+        canvas {
+            background-color: green;
+        }
+    </style>
+    <script>
+        window.onclick = () => {
+            let canvas = FullScreenCanvas.add(document.body, { fullScreen: true });
+            canvas.addEventListener('fullscreenchange', (event) => {
+                if (document.fullscreenElement === null) {
+                    FullScreenCanvas.remove(canvas);
+                }
+            });
+        };
+    </script>
+</body>
+
+</html>
