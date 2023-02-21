@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <title>FullScreenCanvas Demo</title>
+    <script src="../bin/fullScreenCanvas.js"></script>
+</head>
+
+<body>
+    <style>
+        canvas {
+            background-color: green;
+            opacity: 0.5;
+        }
+    </style>
+    <script>
+        let canvases = [];
+        window.onclick = e => {
+            let canvas = FullScreenCanvas.add();
+            canvases.push(canvas);
+        };
+        window.oncontextmenu = e => {
+            if (canvases.length > 0) {
+                FullScreenCanvas.remove(canvases.pop());
+            }
+            e.preventDefault();
+        }
+    </script>
+</body>
+
+</html>
