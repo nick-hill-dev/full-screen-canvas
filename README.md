@@ -58,4 +58,4 @@ FullScreenCanvas.remove(canvas);
 
 ## License
 
-The FullScreenCanvas library is released under the MIT license. See LICENSE for more information.
+The FullScreenCanvas library was written by Nick Hill and is released under the MIT license. See LICENSE for more information.
