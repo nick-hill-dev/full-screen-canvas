@@ -1,0 +1,21 @@
+{
+  "name": "full-screen-canvas",
+  "version": "1.0.0",
+  "description": "Easily create and manage any number of HTML canvas elements that fill the window and / or screen.",
+  "bin": {
+    "bitstream": "bin/fullScreenCanvas.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nick-hill-dev/full-screen-canvas.git"
+  },
+  "keywords": [
+    "canvas"
+  ],
+  "author": "Nick Hill",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/nick-hill-dev/full-screen-canvas/issues"
+  },
+  "homepage": "https://github.com/nick-hill-dev/full-screen-canvas#readme"
+}
