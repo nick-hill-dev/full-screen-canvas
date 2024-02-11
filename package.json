@@ -1,14 +1,20 @@
 {
-  "name": "full-screen-canvas",
-  "version": "1.0.0",
+  "name": "@hill-software/full-screen-canvas",
+  "version": "1.1.0",
   "description": "Easily create and manage any number of HTML canvas elements that fill the window and / or screen.",
-  "bin": {
-    "bitstream": "bin/fullScreenCanvas.js"
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/nick-hill-dev/full-screen-canvas.git"
   },
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "type": "module",
+  "scripts": {
+    "build": "tsc"
+  },
+  "files": [
+    "dist/**/*"
+  ],
   "keywords": [
     "canvas"
   ],
@@ -17,5 +23,11 @@
   "bugs": {
     "url": "https://github.com/nick-hill-dev/full-screen-canvas/issues"
   },
-  "homepage": "https://github.com/nick-hill-dev/full-screen-canvas#readme"
+  "homepage": "https://github.com/nick-hill-dev/full-screen-canvas#readme",
+  "devDependencies": {
+    "rollup": "^4.10.0",
+    "rollup-plugin-dts": "^6.1.0",
+    "rollup-plugin-esbuild": "^6.1.1",
+    "typescript": "^5.3.3"
+  }
 }

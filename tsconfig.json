@@ -1,20 +1,20 @@
 {
-    "compileOnSave": true,
-    "compilerOptions": {
-      "target": "ES2021",
-      "noImplicitAny": true,
-      "noImplicitReturns": true,
-      "noUnusedLocals": true,
-      "module": "system",
-      "removeComments": false,
-      "sourceRoot": "../src",
-      "rootDir": "./src/",
-      "outDir": "./bin/",
-      "outFile": "./bin/fullScreenCanvas.js",
-      "noEmitOnError": true,
-      "composite": true,
-      "declaration": true,
-      "declarationMap": true,
-      "sourceMap": true
-    }
-  }
+  "noImplicitAny": false,
+  "noImplicitReturns": true,
+  "noUnusedLocals": false,
+  "compilerOptions": {
+    "module": "node16",
+    "target": "es2022",
+    "declaration": true,
+    "sourceMap": true,
+    "declarationMap": true,
+    "outDir": "./dist",
+    "strict": true,
+    "rootDir": "./src",
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true
+  },
+  "include": [
+    "src/**/*"
+  ]
+}

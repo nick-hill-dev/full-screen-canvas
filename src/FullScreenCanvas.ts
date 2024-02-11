@@ -1,4 +1,4 @@
-class FullScreenCanvas {
+export class FullScreenCanvas {
 
     private static canvases: Array<{
         canvas: HTMLCanvasElement,
@@ -27,7 +27,7 @@ class FullScreenCanvas {
     }
 
     public static remove(canvas: HTMLCanvasElement) {
-        canvas.parentElement.removeChild(canvas);
+        canvas.parentElement!.removeChild(canvas);
         let manager = this.canvases.find(c => c.canvas === canvas);
         if (manager) {
             window.removeEventListener('resize', manager.resizeHandler, false);
