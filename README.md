@@ -2,6 +2,12 @@
 
 The FullScreenCanvas library is a lightweight library that simplifies the process of creating and removing one or more full-screen HTML `<canvas />` elements. Each canvas occupies the full width and height of the window area, even if the window is resized.
 
+To use this package in your software:
+
+```bash
+npm install @nick-hill-dev/full-screen-canvas
+```
+
 Examples are in the `demos` directory. To run them, execute the following commands:
 
 ```bash
